@@ -9,29 +9,13 @@ Respuestas:
 1)A lo que nos referimos con HARDWARE CRITICOS son los componentes que son indispensables para el funcionamiento de una computadora.
 
 2)
-		   ________________________________________________________________________
-                   |                   |                        |                         |
-                   |     Hardware      |        Critico         |        No Critico       |
-                   |                   |                        |                         |
-                   |                   |                        |                         |
-                   |                   |                        |                         |
-                   |                   |                        |                         |
-                   |                   |                        |                         |
-                   |                   |                        |                         |
-                   |                   |                        |                         |
-                   |                   |                        |                         |
-                   |                   |                        |                         |
-                   |                   |                        |                         |
-                   |                   |                        |                         |
-                   |                   |                        |                         |
-                   |                   |                        |                         |
-                   |                   |                        |                         |
-                   |                   |                        |                         |
-                   |                   |                        |                         |
-                   |                   |                        |                         |
-                   |                   |                        |                         |
-                   |                   |                        |                         |
-                   |___________________|________________________|_________________________|
-
-                   
-                   
+____________________________________________________________________________________________
+|                  Críticos                 |                  No Criticos                 |
+|-------------------------------------------|----------------------------------------------|
+| Procesador                                | Teclado                                      |
+| Memoria RAM                               | Mouse                                        |
+| Disco duro                                | Altavoces                                    |
+| Tarjeta madre                             | Monitor                                      |
+| Fuente de poder                           | Cámara web                                   |
+|___________________________________________|______________________________________________|
+  
