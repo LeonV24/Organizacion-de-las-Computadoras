@@ -1,11 +1,26 @@
-INPUT "Ingrese la primera nota"; n1
-INPUT "Ingrese la primera nota"; n2
-INPUT "Ingrese la primera nota"; n3
+PRINT "Registro de usuarios"
 
-nf = (n1 + n2 + n3) / 3
+INPUT "Ingrese nombre"; d1
+INPUT "Ingrese apellido"; d2
+INPUT "Ingrese nombre de usuario"; d3
+INPUT "Ingrese contraseña"; d4
+INPUT "Ingrese correo electronico"; d5
 
-IF nf >= 6 THEN
-    PRINT "Aprobo"
+PRINT d1
+PRINT d2
+PRINT d3
+PRINT d4
+PRINT d5
+
+PRINT "Login"
+
+INPUT "Ingrese el nombre de usuario"; l1
+INPUT "Ingrese la contraseña"; l2
+
+IF l1 = d3 AND l2 = d4 THEN
+    PRINT "LOGIN SUCCESFULY"
 ELSE
-    print "No aprobo"
+    PRINT "ERROR"
 END IF
+
+
