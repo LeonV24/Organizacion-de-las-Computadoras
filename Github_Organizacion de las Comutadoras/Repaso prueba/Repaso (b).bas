@@ -1,11 +1,20 @@
-INPUT "Ingrese fondos al cajero: "; fondos
-INPUT "Ingrese el monto que quiere retirar: "; monto
+PRINT "Ingrese el monto inicial del cajero automático:"; montoInicial
 
-WHILE fondos > monto
-    IF fondos > monto THEN
-        PRINT "Se retiro la moni"
-        fondos = fondos - monto
+DO
+    PRINT "Monto disponible en el cajero: $" + STR$(montoInicial)
+    PRINT "Ingrese la cantidad a retirar (0 para salir):"
+    INPUT cantidadRetirar
+
+    IF cantidadRetirar > montoInicial THEN
+        PRINT "Error: Fondos insuficientes. El monto disponible es $" + STR$(montoInicial)
     ELSE
-        PRINT "No hay mas moni"
+        IF cantidadRetirar > 0 THEN
+            montoInicial = montoInicial - cantidadRetirar
+            PRINT "Retiro exitoso."
+        ELSE cantidadRetirar < 0 THEN
+            PRINT "Error: La cantidad ingresada no es válida."
+        END IF
     END IF
-WEND
+LOOP UNTIL cantidadRetirar = 0
+
+PRINT "Gracias por utilizar el cajero automático. ¡Hasta luego!"
