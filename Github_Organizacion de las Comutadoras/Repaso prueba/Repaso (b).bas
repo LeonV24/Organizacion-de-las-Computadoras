@@ -15,7 +15,7 @@ DO
             IF cantidadRetirar = 0 THEN
                 PRINT "Gracias por usar este cajero."
             ELSE
-                PRINT "No hay mas plata ma brother"
+                PRINT "No hay mas plata mi brother"
             END IF
         END IF
     END IF
