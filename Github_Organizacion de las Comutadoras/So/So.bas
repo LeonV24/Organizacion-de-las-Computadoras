@@ -1,26 +1,33 @@
-user$ = "admin"
-password$ = "admin"
-intentos = 0
+intentos = 3
+x = 0
 
-INPUT "Ingrese el usuario: "; user1$
-INPUT "Ingrese la contrasenia: "; password1$
+WHILE x = 0
 
-IF user1 = user AND password1 = password THEN
-    PRINT "Logeo con exito."
-ELSE
-    IF user1 <> user OR password1 <> password THEN
+    INPUT "Ingrese el usuario: "; user1$
+    INPUT "Ingrese la contrasenia: "; password1$
+
+    IF "admin" = password1$ AND "admin" = user1$ THEN
+        PRINT "Logeo con exito."
+        x = 1
+    ELSE
         intentos = intentos - 1
         PRINT "Error. Le quedan"; intentos; "intentos."
+        IF intentos = 0 THEN
+            x = 1
+        END IF
     END IF
-END IF
+WEND
 
-CLS
-IF intentos = 0 THEN
+IF intentos > 0 THEN
     PRINT "                 Bienvenido               "
     PRINT "       Cual aplicacion quiere iniciar?  "
     PRINT "1. Calculadora              2. Notepad "
     PRINT "3. Explorador de archivos   4. Google Chrome "
-    INPUT "5. Paint                    6. Capturar pantalla "; a
+    PRINT "5. Paint                    6. Capturar pantalla "
+    PRINT "7. Mozilla Firefox          8. Microsoft Edge "
+    PRINT "9. VLC Media Player         10. Outlook "
+    INPUT "11. Skype                   12. Adobe Photoshop "; a
+
 
     SELECT CASE a
 
@@ -70,6 +77,24 @@ IF intentos = 0 THEN
 
         CASE 6
             SHELL "SnippingTool"
+
+        CASE 7
+            SHELL "firefox"
+
+        CASE 8
+            SHELL "msedge"
+
+        CASE 9
+            SHELL "vlc"
+
+        CASE 10
+            SHELL "outlook"
+
+        CASE 11
+            SHELL "skype"
+
+        CASE 12
+            SHELL "photoshop"
 
     END SELECT
 END IF
