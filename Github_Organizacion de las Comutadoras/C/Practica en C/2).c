@@ -30,6 +30,7 @@ int main(){
             case 1:
                 printf("Cuanta plata quiere ingresar: ");
                 scanf("%f", monto);
+                saldo = saldo + monto
                 printf("A ingresado %d", monto);
                 system("cls");
                 break;
