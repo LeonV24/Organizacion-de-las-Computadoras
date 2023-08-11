@@ -3,8 +3,8 @@
 
 int main(){
 
-    int saldo = 1000, opcion, x, true_;
-    float monto;
+    int opcion, x, true_;
+    float saldo = 1000, monto;
 
     true_ = 0;
 
