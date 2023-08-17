@@ -126,16 +126,14 @@ int main(){
 
                 }
                 break;
-
-
-            printf("Quiere seguir comprando/adoptando?\n");
-            printf("1. Si        2. No");
+        }
+        printf("Quiere seguir comprando/adoptando?\n");
+            printf("1. Si        2. No\n");
             scanf("%d", &opcion);
             if(opcion == 2){
                 break;
             }
             system("cls");
-        }
     }
     printf("-------------------------------------------------\n");
     printf("                Animales adoptados           \n");
@@ -147,20 +145,20 @@ int main(){
     printf("-------------------------------------------------\n");
     printf("               Comida comprada \n");
     printf("-------------------------------------------------\n");
-    printf("La cantidad de comida economica para perros fue: %d\n", cantDePerros);
-    printf("La cantidad de comida intermedia para perros fue: %d\n", cantDePerros);
-    printf("La cantidad de comida premiun para perros fue: %d\n", cantDePerros);
+    printf("La cantidad de comida economica para perros fue: %d\n", comidaEconomicaPerro);
+    printf("La cantidad de comida intermedia para perros fue: %d\n", comidaIntermediaPerro);
+    printf("La cantidad de comida premiun para perros fue: %d\n", comidaPremiunPerro);
     printf("-------------------------------------------------\n");
-    printf("La cantidad de comida economica para loros fue: %d\n", cantDePerros);
-    printf("La cantidad de comida intermedia para loros fue: %d\n", cantDePerros);
-    printf("La cantidad de comida premiun para loros fue: %d\n", cantDePerros);
+    printf("La cantidad de comida economica para loros fue: %d\n", comidaEconomicaLoros);
+    printf("La cantidad de comida intermedia para loros fue: %d\n", comidaIntermediaLoros);
+    printf("La cantidad de comida premiun para loros fue: %d\n", comidaPremiunLoros);
     printf("-------------------------------------------------\n");
-    printf("La cantidad de comida economica para gatos fue: %d\n", cantDePerros);
-    printf("La cantidad de comida intermedia para gatos fue: %d\n", cantDePerros);
-    printf("La cantidad de comida premiun para gatos fue: %d\n", cantDePerros);
+    printf("La cantidad de comida economica para gatos fue: %d\n", comidaEconomicaGatos);
+    printf("La cantidad de comida intermedia para gatos fue: %d\n", comidaIntermediaGatos);
+    printf("La cantidad de comida premiun para gatos fue: %d\n", comidaPremiunGatos);
     printf("-------------------------------------------------\n");
-    printf("La cantidad de comida economica para peces fue: %d\n", cantDePerros);
-    printf("La cantidad de comida intermedia para peces fue: %d\n", cantDePerros);
-    printf("La cantidad de comida premiun para peces fue: %d\n", cantDePerros);
+    printf("La cantidad de comida economica para peces fue: %d\n", comidaEconomicaPezes);
+    printf("La cantidad de comida intermedia para peces fue: %d\n", comidaIntermediaPezes);
+    printf("La cantidad de comida premiun para peces fue: %d\n", comidaPremiunPezes);
 
 }
