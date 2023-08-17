@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 int main(){
 
@@ -9,7 +10,7 @@ int main(){
     int estado = 0;
 
     while(estado == 0){
-        printf("Quiere Adoptar un animal(1)  Comprar comida (2)");
+        printf("Quiere adoptar un animal(1)  Comprar comida (2)\n");
         scanf("%d",&opcion);
         switch(opcion){
 
@@ -22,24 +23,29 @@ int main(){
 
                     case 1:
                         printf("Felicidades usted adopto a un perro");
+                        sleep(3);
                         cantDePerros++;
                         system("cls");
                         break;
 
                     case 2:
                         printf("Felicidades usted adopto a un loro");
+                        sleep(3);
                         cantDeLoros++;
                         system("cls");
                         break;
 
                     case 3:
                         printf("Felicidades usted adopto a un gato");
+                        sleep(3);
+                        sleep(3);
                         cantDeGatos++;
                         system("cls");
                         break;
 
                     case 4:
                         printf("Felicidades usted adopto a un pez");
+                        sleep(3);
                         cantDePezes++;
                         system("cls");
                         break;
@@ -145,12 +151,16 @@ int main(){
     printf("La cantidad de comida intermedia para perros fue: %d\n", cantDePerros);
     printf("La cantidad de comida premiun para perros fue: %d\n", cantDePerros);
     printf("-------------------------------------------------\n");
-    printf("La cantidad de comida economica para perros fue: %d\n", cantDePerros);
-    printf("La cantidad de comida intermedia para perros fue: %d\n", cantDePerros);
-    printf("La cantidad de comida premiun para perros fue: %d\n", cantDePerros);
+    printf("La cantidad de comida economica para loros fue: %d\n", cantDePerros);
+    printf("La cantidad de comida intermedia para loros fue: %d\n", cantDePerros);
+    printf("La cantidad de comida premiun para loros fue: %d\n", cantDePerros);
     printf("-------------------------------------------------\n");
-    printf("La cantidad de comida economica para perros fue: %d\n", cantDePerros);
-    printf("La cantidad de comida intermedia para perros fue: %d\n", cantDePerros);
-    printf("La cantidad de comida premiun para perros fue: %d\n", cantDePerros);
+    printf("La cantidad de comida economica para gatos fue: %d\n", cantDePerros);
+    printf("La cantidad de comida intermedia para gatos fue: %d\n", cantDePerros);
+    printf("La cantidad de comida premiun para gatos fue: %d\n", cantDePerros);
+    printf("-------------------------------------------------\n");
+    printf("La cantidad de comida economica para peces fue: %d\n", cantDePerros);
+    printf("La cantidad de comida intermedia para peces fue: %d\n", cantDePerros);
+    printf("La cantidad de comida premiun para peces fue: %d\n", cantDePerros);
 
 }
